@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+:root {
+  --backgroundColor: #2a545c;
+  --bodyTextColor: #aad893;
+}
+
+body.bg-dark-green.home {
+    background-image: url(../img/top-left.png?v=1), url(../img/top-right.png?v=1), url(../img/bottom-left.png?v=1), url(../img/middle-left-product.png?v=1), url(../img/middle-right-product.png?v=1);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom left, left center, right center;
+}
+
+body.bg-dark-green.about {
+    background-image: url(../img/top-left.png?v=1), url(../img/top-right.png?v=1), url(../img/bottom-left.png?v=1), url(../img/middle-right-product.png?v=1);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom left, right center;
+}
+
+body.bg-dark-green.product-single {
+background-image: url(../img/top-left.png?v=1), url(../img/top-right.png?v=1), url(../img/bottom-right.png?v=1), url(../img/middle-right-product.png?v=1);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom right, right center;
+}
+
+.stacked-imgs {
+    position: relative;
+    display: inline-block !important;
+    width: 100% !important;
+    margin-bottom: 50px !important;
+} 
+
+.mt-10 {
+  margin-top: 5.5rem !important;
+}
+
+.bg-dark-green {
+  background: var(--backgroundColor);
+}
+
+.about-img img {
+    max-width: 250px;
+    border: 1px solid #AAD893;
+    border-radius: 2px;
+}
+
+a.social {
+    color: #AAD893;
+    font-size: 30px;
+}
+
+.container-custom-md {
+    max-width:800px;
+}
+.about-content h1 {
+    font-family: "Josefin Slab", serif;
+    font-weight: normal;
+    font-size: 30px;
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-bottom: 6px;
+    color: #AAD893;
+}
+.about-content h2 {
+    font-family: "Josefin Slab", serif;
+    font-weight: normal;
+    font-size: 22px;
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-bottom: 6px;
+    color: #AAD893;
+}
+.about-content p {
+    color: #AAD893;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.menu > li > a {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--bodyTextColor);
+}
+
+.menu > li > a:hover {
+  text-decoration: underline;
+}
+
+.product-listings {
+  margin: 0 auto;
+  max-width: 60%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: var(--bodyTextColor);
+  position:relative;
+}
+
+.product-listings > .product {
+  position: relative;
+  margin: 0 auto;
+  max-width: 65%;
+}
+
+.product-listings > .product > .product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-listings > .product > .sold-out-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product-listings > .product > .sold-out-tag > .sold-out {
+  float: right;
+  position: relative;
+  border-style: solid;
+  border-width: 0 5em 5em 0;
+  border-color: transparent #648553 transparent transparent;
+  text-align: center;
+}
+
+.product-listings > .product > .sold-out-tag > .sold-out > .sold-out-text {
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: -4.5em;
+  text-transform: uppercase;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: var(--bodyTextColor);
+}
+
+.single-product > .product {
+  max-width: 80%;
+  text-align: center;
+  color: var(--bodyTextColor);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+.single-product > .product > .product-add-to-cart > .add-to-cart-btn {
+  color: #fff;
+  background-color: #648553;
+  border-radius: initial;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.single-product > .product > .product-add-to-cart > .add-to-cart-btn:hover{
+ background-color: #475e3b;
+}
+
+
+.product-info-col {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--bodyTextColor);
+  margin-top: 2em;
+}
+
+.product-info-col > .product-description-title {
+  font-size: 25px;
+}
+
+.product-info-col > .product-description-underline {
+  border-top: 2px solid var(--bodyTextColor);
+  width: 6em;
+  margin-left: 0px;
+}
+
+.product-info-col > .product-description-text {
+  font-weight: lighter; /* 300 */
+  font-size: 20px;
+  max-height: 15em;
+  overflow-y: auto;
+}
+
+.product-similar-title {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  color: var(--bodyTextColor);
+}
+
+.product-similar-underline {
+  border-top: 2px solid var(--bodyTextColor);
+  width: 6em;
+}
+
+.product-similar-items {
+  margin-left: 0px;
+  text-align:center;
+}
+
+.product-similar-items > .row > .col-md-3 > .product > .sold-out-tag {
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.product-similar-items > .row > .col-md-3 > .product > .sold-out-tag > .sold-out {
+  float: right;
+  position: relative;
+  border-style: solid;
+  border-width: 0 5em 5em 0;
+  border-color: transparent #648553 transparent transparent;
+  text-align: center;
+}
+
+.product-similar-items > .row > .col-md-3 > .product > .sold-out-tag > .sold-out > .sold-out-text {
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: -4.5em;
+  text-transform: uppercase;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: var(--bodyTextColor);
+}
+
+.product-similar-items > .row > .col-md-3 > .product {
+  max-width: 100%;
+  text-align: center;
+  color: var(--bodyTextColor);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+      position: relative;
+}
+
+.product-similar-items > .row > .col-md-3 > .product > .product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--bodyTextColor);
+  margin-top: 7em;
+}
+
+footer > .copyright {
+  margin-bottom: 0.5em;
+}
+
+.commission {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 4rem !important;
+    border: 1px solid #AAD893;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.commission a.btn.btn-primary {
+    background: #648553;
+    border-color: #648553;
+    border-radius: 0px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.commission h3 {
+    font-weight: 400;
+}
+
+.commission .request-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 1rem !important;
+    margin-top: 1.5rem !important;
+}
+
+
+@media (max-width: 768px) {
+body.bg-dark-green.home {
+    background-size:100px,100px,100px,100px,100px;
+    
+}
+
+body.bg-dark-green.about {
+    background-size:100px,100px,100px,100px;
+}
+
+body.bg-dark-green.product-single {
+    background-size:100px,100px,100px,100px;
+
+}
+a.navbar-brand {
+    margin-top: 0px !important;
+}
+a.navbar-brand img {
+    max-width: 100px;
+}
+ul.menu.nav li {
+    display: inline-block;
+}
+ul.menu.nav {
+    display: inline-block;
+    text-align: center;
+}
+
+.about-img.text-right {
+    text-align: center !important;
+}
+.about-img img {
+    max-width: 150px;
+}
+.container.main-container {
+    margin-top: 2rem !important;
+}
+.product-listings > .product {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.single-product > .product {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer.footer {
+    margin-top: 1rem !IMPORTANT;
+}
+.product-similar-items {
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+    max-width: 65%;
+}
+.product-similar-items > .row > .col-md-4 > .product {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.commission h3 {
+    font-weight: 400;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .stacked-imgs ul {
+    max-width: 60%;
+  }
+  
+  .stacked-imgs li {
+    width: 65%;
+  }
+  
+}
